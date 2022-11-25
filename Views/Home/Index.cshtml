@@ -4,31 +4,56 @@
 
 <div class="text-center">
     <h1 class="display-4">Bem vindo!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Conteúdo de aprendizagem <a href="https://github.com/N0vais"> Web apps with ASP.NET Core </a> testando via Github.</p>
 </div>
 
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3">
-      <label for="disabledSelect" class="form-label">Selecione uma opção</label>
-      <select id="disabledSelect" class="form-select">
-        <option>Disabled select</option>
-        <option>Disabled select</option>
-        <option>Disabled select</option>
-        <option>Disabled select</option>
-      </select>
+<div class="d-flex flex-column h-100">
+<main role="main" class="flex-shrink-0">
+    <div class="container">
+        <h1 class="mt-5">Cadastro de Aluno</h1>
+        <p class="lead text-justify">Preencha os campos abaixo.</p>
+
+        <!-- Formulário HTML -->
+        <form name="novo_aluno" action="" method="post">
+            <!-- formatação de linha do Bootstrap -->
+            <div class="row">
+                <!-- div configurada com espaços pelo Bootstrap -->
+                <div class="col-md-6 mb-3">
+                    <!-- rótulo que fica acima do campo -->
+                    <label for="nome">NOME</label>
+
+                    <!-- campo do formulário com placeholder -->
+                    <input type="text" class="form-control" id="nome" name="nome"
+                           placeholder="Digite o nome completo" value="" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="ra">RA</label>
+                    <input type="text" class="form-control" id="ra" name="ra" placeholder="Digite seu RA" value="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="curso">CURSO</label>
+                    <select class="form-select d-block w-100" id="curso" name="curso" required>
+                        <option value="">Selecione o Curso</option>
+                        <option value="CC">Ciências da Computação</option>
+                        <option value="SI">Sistemas de Informação</option>
+                        <option value="TADS">Tecnologia em Análise de Sistemas</option>
+                        <option value="TRC">Tecnologia em Redes de Computadores</option>
+                        <option value="TGTI">Tecnologia em Gestão de TI</option>
+                        <option value="TBD">Tecnologia em Banco de Dados</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- campo oculto para ser enviado ao controller -->
+            <input type="hidden" name="operacao" value="novo">
+
+            <!-- botão de enviar o formulário -->
+            <input type="submit" class="btn btn-primary btn-lg btn-block" value="Cadastrar">
+        </form>
     </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
