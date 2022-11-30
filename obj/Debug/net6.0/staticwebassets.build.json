@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HyFIusWJ9v/sskxwx+7CRC3u+Hw74efjVsFAbuCqCig=",
+  "Hash": "v8tsqhcuCbvnVNsQgQkekCvIOhO1+eE2sAc7EU2sB1c=",
   "Source": "atividade_av1",
   "BasePath": "_content/atividade_av1",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Day\\Desktop\\av1_daniel\\atividade_av1\\wwwroot\\img\\fundo_av1.jpg",
+      "SourceId": "atividade_av1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Day\\Desktop\\av1_daniel\\atividade_av1\\wwwroot\\",
+      "BasePath": "_content/atividade_av1",
+      "RelativePath": "img/fundo_av1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\fundo_av1.jpg"
     },
     {
       "Identity": "C:\\Users\\Day\\Desktop\\av1_daniel\\atividade_av1\\wwwroot\\img\\fundo-va1.jpg",
